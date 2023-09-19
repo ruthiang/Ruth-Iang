@@ -1,0 +1,8 @@
+SELECT id, name, popularity, followers, AVG("min-peak-rank") AS "avg-peak-rank"
+FROM
+(SELECT final.id, final.name, data_w_spotify.popularity, data_w_spotify.followers, charts.song, MIN(charts."peak-rank") AS "min-peak-rank"
+FROM final, data_w_spotify, charts
+WHERE final.id = data_w_spotify.id AND final.name = charts.name AND popularity >= 50 AND followers >= 1000000
+GROUP BY final.id, final.name, popularity, followers, song)
+GROUP BY id, name, popularity, followers
+ORDER BY id asc

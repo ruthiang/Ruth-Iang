@@ -1,0 +1,4 @@
+SELECT final.id, final.name, data_w_spotify.popularity, data_w_spotify.followers
+FROM final, data_w_spotify
+WHERE final.id = data_w_spotify.id AND popularity >= 50 AND followers >= 1000000
+ORDER BY id asc

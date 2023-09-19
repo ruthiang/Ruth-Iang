@@ -1,0 +1,4 @@
+SELECT final.id, final.name, data_w_spotify.popularity, data_w_spotify.followers, feature_core_100.num_release, DATEDIFF(year, feature_core_100.first_release_date, feature_core_100.last_release_date) AS years_active
+FROM final, data_w_spotify, feature_core_100
+WHERE final.id = data_w_spotify.id AND final.name = feature_core_100.name AND data_w_spotify.popularity >= 50 AND data_w_spotify.followers >= 1000000
+ORDER BY id asc
