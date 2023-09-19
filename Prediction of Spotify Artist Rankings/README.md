@@ -1,6 +1,13 @@
 # Project Summary: Predicting Artists Success
 
-###	The music industry over the years has evolved along with consumer tastes. Both the predominant genres of popular music and music consumption patterns have evolved over time. Recording and listening technology has progressed significantly in recent years. As such, a musical artist's popularity in the modern age is most often quantified from streaming service data. This makes it more difficult for the music industry to determine success for individual artists in the modern age. Thus, the goal of this project was to point to certain indicators of popularity and success that might allow for better promotion of artists. Additionally, some of these indicators might make it easier for consumers to discover new artists using.
+## Introduction
+- The music industry over the years has evolved along with consumer tastes.
+- Both the predominant genres of popular music and music consumption patterns have evolved over time.
+- Recording and listening technology has progressed significantly in recent years.
+- As such, a musical artist's popularity in the modern age is most often quantified from streaming service data.
+- This makes it more difficult for the music industry to determine success for individual artists in the modern age.
+- Thus, the goal of this project was to point to certain indicators of popularity and success that might allow for better promotion of artists.
+-  Additionally, some of these indicators might make it easier for consumers to discover new artists using.
  
 ###	This big data project was conceived with Spotify data taken from a publicly available Kaggle dataset. Almost all of the individual CSV files contained the user id of each artist, their name, whether they are done with their career and their spotify id. To make sure all factors affecting an artist’s popularity were included, several files were analyzed, each containing different information. Each file had one or two columns in common that allowed for SQL querying. The two major metrics that were analyzed were Spotify’s popularity index, a value between 0 and 100 that compares artist popularity relative to the rest of Spotify, and their Spotify follower count. The key metrics were then compared to several factors affecting artist popularity. The factors included the artists’ total number of releases, the amount of time between first and last releases, and chart performance through the average peak ranks and average weeks on board for songs. Each comparison provided potential predictive tools for determining artist success in the streaming age. 
  
